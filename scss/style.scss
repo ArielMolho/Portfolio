@@ -1,0 +1,169 @@
+/* Paleta de colores
+https://colorhunt.co/palette/212849
+*/
+:root{
+    --dark: #1c2b2d;
+    --blue: #1f6f8b;
+    --greyblue: #99a8b2;
+    --creampink: #e6d5b8;
+}
+
+/* BODY */
+.no-gutters{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* NAV */
+.navbar{
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    font-family: 'Trade Winds', cursive;
+    font-size: 1.5rem;
+}
+
+.nav-item{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.nav-item :hover{
+    color: whitesmoke !important;
+}
+
+.logo{
+    width: 80px;
+}
+
+/* HEAD */
+section#head{
+    margin-top: 7rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    background-image: url(../media/laptop.jpg);
+    background-position: center center;
+    height: 70vh;
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1{
+    font-family: 'Kufam', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lead{
+    font-weight: bolder;
+}
+
+/* ABOUT ME */
+section#aboutMe{
+    background-color: var(--dark);
+    padding: 2rem;
+    font-family: 'Kufam', cursive;
+    color: whitesmoke !important;
+}
+
+h2{
+    font-weight: 700;
+    font-style: italic;
+    padding: 1rem;
+} /* Also H2 for Portfolio and Contact */
+
+/* PORTFOLIO */
+section#portfolio{
+    background-color: var(--creampink);
+    padding: 2rem;
+    font-family: 'Kufam', cursive;
+}
+
+.card-group{
+    padding: 1rem;
+    background-color: var(--creampink);
+}
+
+.card{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--greyblue);
+}
+
+/* CONTACT */
+section#contact{
+    background-color: var(--dark);
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(163, 163, 163);
+    height: 10vh;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 567px) {
+    .logo{
+        width: 50px;
+    }
+    section#head{
+        margin-top: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        height: 50vh;
+        background-image: url(../media/laptop2.jpg);
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .lead, #learnMore, .card-title{
+        font-size: 1rem;
+    }
+    .card-title{
+        font-weight: bold;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .navbar, #section-me, .card-text, #card-button, #form-button{
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 3rem;
+    }
+    .lead{
+        font-size: 2rem;
+    }
+    .card-title{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .navbar, #section-me, .card-text, #card-button, #form-button{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 992px) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card{
+        margin: 1rem 0;
+    }
+}
