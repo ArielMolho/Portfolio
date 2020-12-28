@@ -27,9 +27,10 @@ a:link, a:visited, a:active {
 }
 
 /* NAV */
+
 .navbar{
     background-color: var(--blue);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-family: var(--fontOne);
     font-size: 1rem;
 }
@@ -60,18 +61,18 @@ a.navbar-name :hover{
 }
 
 .nav-icon{
-    margin-right: 1rem;
     padding-right: 1rem;
 }
 
 /* HEAD */
 section#head{
-    margin-top: 10rem;
+    margin-top: 6.5em;
     padding-top: 10rem;
     padding-bottom: 2rem;
     background-image: url(../media/backgroundhead.png);
     background-position: center center;
-    height: 70vh;
+    height: 80vh;
+    width: 100%;
     display: flex;
     flex: column;
     justify-content: center;
@@ -110,7 +111,9 @@ h1{
 /* ABOUT ME */
 section#aboutMe{
     background-color: var(--lightgrey);
-    padding: 2rem;
+    padding: 1rem;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 h2{
@@ -123,7 +126,9 @@ h2{
 /* PORTFOLIO */
 section#portfolio{
     background-color: var(--creampink);
-    padding: 2rem;
+    padding: 1rem;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .card-group{
