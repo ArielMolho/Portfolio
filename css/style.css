@@ -5,33 +5,53 @@ https://colorhunt.co/palette/212849
   --dark: #1c2b2d;
   --blue: #1f6f8b;
   --greyblue: #99a8b2;
-  --creampink: #e6d5b8; }
+  --creampink: #e6d5b8;
+  --fontOne: 'Montserrat', sans-serif;
+  --fontTwo: 'Open Sans', sans-serif; }
 
 /* BODY */
 .no-gutters {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
 /* NAV */
 .navbar {
   background-color: var(--blue);
   padding: 1rem 2rem;
-  font-family: 'Trade Winds', cursive;
-  font-size: 1.5rem; }
+  font-family: var(--fontOne);
+  font-size: 1rem; }
 
 .nav-item {
   padding-right: 1rem;
   padding-left: 1rem; }
 
 .nav-item :hover {
-  color: whitesmoke !important; }
+  color: #E6D5B8 !important; }
 
 .logo {
-  width: 80px; }
+  width: 60px;
+  height: 60px; }
+
+a.navbar-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white; }
+
+a.navbar-name :hover {
+  color: #E6D5B8; }
+
+.nav-icon {
+  margin-right: 1rem;
+  padding-right: 1rem; }
 
 /* HEAD */
 section#head {
-  margin-top: 7rem;
+  margin-top: 6.25rem;
   padding-top: 10rem;
   padding-bottom: 2rem;
   background-image: url(../media/laptop.jpg);
@@ -43,13 +63,19 @@ section#head {
   align-items: flex-end; }
 
 h1 {
-  font-family: 'Kufam', cursive;
+  font-family: var(--fontOne);
   font-size: 5rem;
-  font-weight: 700;
-  font-style: italic; }
+  font-weight: 800; }
 
 .lead {
-  font-weight: bolder; }
+  font-family: var(--fontOne);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--greyblue); }
+
+.btn.btn-secondary {
+  background-color: var(--blue);
+  border: none; }
 
 /* ABOUT ME */
 section#aboutMe {
