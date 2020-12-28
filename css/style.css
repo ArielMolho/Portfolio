@@ -105,6 +105,50 @@ h2 {
   font-family: var(--fontOne); }
 
 /* Also H2 for Portfolio and Contact */
+/*
+.aboutMe-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "picture dividerOne"
+    "picture textOne"
+    "picture dividerTwo"
+    "picture textTwo"
+    "picture .";
+}
+
+.profilePic{
+    grid-area: picture;
+    width: 316px;
+    height: 400px;
+}
+
+.lineOne{
+    grid-area: dividerOne;
+    color: var(--sand);
+}
+
+p#section-me{
+    grid-area: textOne;
+    font-family: var(--fontTwo);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.lineTwo{
+    grid-area: dividerTwo;
+    color: var(--sand);
+}
+
+p#section-objective{
+    grid-area: textTwo;
+    font-family: var(--fontTwo);
+    font-size: 16px;
+    color: var(--blue);
+    font-style: italic;
+    font-weight: bold;
+}*/
 /* PORTFOLIO */
 section#portfolio {
   background-color: var(--creampink);
