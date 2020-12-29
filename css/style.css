@@ -140,27 +140,63 @@ hr {
 
 /* PORTFOLIO */
 section#portfolio {
-  background-color: var(--creampink);
+  background-color: var(--blue);
   padding: 1rem;
-  margin-right: 0;
-  margin-left: 0; }
+  height: 70vh;
+  margin: 0 0 20vh 0; }
+
+.portfolio-text {
+  font-family: var(--fontTwo);
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 300; }
 
 .card-group {
-  padding: 1rem;
-  background-color: var(--creampink); }
+  padding: 0 1rem 1rem 1rem; }
+
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all .5s; }
+
+.card:hover {
+  transform: translate(0, 20px); }
 
 .card-portfolio {
   margin: 1rem;
   padding: 1rem;
   background-color: var(--white); }
 
+.card-title {
+  font-family: var(--fontOne);
+  font-weight: 600;
+  color: #555555; }
+
+.card-text {
+  font-family: var(--fontTwo);
+  font-weight: 300;
+  color: #555555; }
+
+.card-img-top {
+  padding-bottom: 1rem; }
+
+.portfolio-link {
+  font-family: var(--fontOne);
+  color: #555555;
+  font-weight: 600; }
+
+.link-divider {
+  font-family: var(--fontTwo);
+  color: var(--blue);
+  font-weight: 700; }
+
 /* CONTACT */
 section#contact {
-  background-color: var(--dark); }
+  background-color: var(--white); }
 
 /* FOOTER */
 footer {
-  background-color: #a3a3a3;
+  background-color: var(--dark);
   height: 10vh; }
 
 .redes {
