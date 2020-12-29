@@ -4,9 +4,10 @@ https://colorhunt.co/palette/212849
 :root{
     --dark: #1c2b2d;
     --blue: #1f6f8b;
-    --greyblue: #99a8b2;
+    --greyblue: #99a8b2; /*vuela*/
     --lightgrey: #EBEBEB;
-    --creampink: #e6d5b8;
+    --creampink: #e6d5b8; /*vuela*/
+    --white: white;
     --sand: #E6D5B8;
     --fontOne: 'Montserrat', sans-serif;
     --fontTwo: 'Open Sans', sans-serif;
@@ -52,7 +53,7 @@ a.navbar-name{
     font-size: 1.25rem;
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 a.navbar-name :hover{
@@ -108,64 +109,61 @@ h1{
 }
 
 /* ABOUT ME */
-section#aboutMe{
-    background-color: var(--lightgrey);
-    padding: 1rem;
-    margin-right: 0;
-    margin-left: 0;
-}
-
 h2{
     font-weight: 500;
-    font-style: italic;
+    font-size: 40px;
     padding: 1rem;
     font-family: var(--fontOne);
 } /* Also H2 for Portfolio and Contact */
 
-/*
-.aboutMe-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "picture dividerOne"
-    "picture textOne"
-    "picture dividerTwo"
-    "picture textTwo"
-    "picture .";
-}
-
-.profilePic{
-    grid-area: picture;
-    width: 316px;
-    height: 400px;
-}
-
-.lineOne{
-    grid-area: dividerOne;
-    color: var(--sand);
-}
-
-p#section-me{
-    grid-area: textOne;
-    font-family: var(--fontTwo);
-    font-size: 16px;
-    font-weight: lighter;
-}
-
-.lineTwo{
-    grid-area: dividerTwo;
-    color: var(--sand);
-}
-
-p#section-objective{
-    grid-area: textTwo;
-    font-family: var(--fontTwo);
-    font-size: 16px;
+h2.sectionOne{
     color: var(--blue);
+}
+
+h2.sectionTwo{
+    color: var(--white);
+}
+
+h2.sectionThree{
+    @extend h2.sectionOne;
+}
+
+section#aboutMe{
+    background-color: var(--lightgrey);
+    padding: 1rem;
+    height: 70vh;
+    margin: 0 0 20vh 0;
+}
+
+.card-about{
+    background-color: var(--lightgrey);
+}
+
+.card-image{
+    width: 350px;
+    height: 443px;
+}
+
+.body-about{
+    padding: 0;
+}
+
+hr{
+    border-top: 4px solid var(--sand);
+}
+
+.textOne{
+    font-family: var(--fontTwo);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.textTwo{
+    font-family: var(--fontTwo);
+    color: var(--blue);
+    font-size: 22px;
     font-style: italic;
-    font-weight: bold;
-}*/
+}
 
 /* PORTFOLIO */
 section#portfolio{
@@ -180,10 +178,10 @@ section#portfolio{
     background-color: var(--creampink);
 }
 
-.card{
+.card-portfolio{
     margin: 1rem;
     padding: 1rem;
-    background-color: var(--greyblue);
+    background-color: var(--white);
 }
 
 /* CONTACT */
