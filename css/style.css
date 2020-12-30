@@ -322,7 +322,7 @@ section#contact {
   a.navbar-name {
     font-size: 1rem; }
   .nav-icon {
-    padding-right: .5rem; }
+    padding-right: 1rem; }
   /* HEAD */
   section#head {
     margin-top: 2.5rem;
@@ -367,10 +367,50 @@ section#contact {
     font-size: 12px; } }
 
 @media (max-width: 992px) {
+  /* NAV */
+  .nav-icon, nav.navbar {
+    padding-right: 2rem; }
+  /* HEAD */
+  section#head {
+    margin-top: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    height: 70vh;
+    background-size: 100% 60%; }
+  h1 {
+    font-size: 4rem; }
+  h2 {
+    font-size: 3rem; }
+  #learnMore, .navbar, #form-button, a.portfolio-link, .card-title {
+    font-size: 1.25rem; }
+  p.lead, .portfolio-text, p.portfolio-card-text {
+    font-size: 1rem; }
+  /* ABOUT ME & PORTFOLIO*/
   .card-group {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
-  .card {
-    margin: 1rem 0; } }
+  .card-portfolio {
+    margin: 1rem 0; }
+  section#aboutMe, section#portfolio {
+    height: 100%;
+    margin: 0; }
+  .image-about {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .card-image {
+    width: 60%;
+    height: 60%; }
+  .body-about {
+    padding: 1rem 0;
+    margin: 0; }
+  .textOne {
+    font-size: 16px; }
+  .textTwo {
+    font-size: 20px; }
+  /* CONTACT & FOOTER*/
+  .form-control, .contact-whatsapp, .footer-copyright {
+    font-size: 14px; } }
