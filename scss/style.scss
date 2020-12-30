@@ -242,6 +242,16 @@ section#contact{
     background-color: var(--white);
 }
 
+.form-control{
+    font-size: 14px;
+    color: rgb(179, 177, 177);
+    border: rgb(179, 177, 177) solid 2px;
+}
+
+.form-control:hover{
+    border: var(--blue) solid 2px;
+}
+
 #form-button{
     background-color: var(--blue);
     color: var(--white);
@@ -300,22 +310,30 @@ section#contact{
 
 /* MEDIA QUERIES */
 @media (max-width: 567px) {
+    /* NAV */
     .logo{
         width: 50px;
         height: 50px;
     }
+    a.navbar-name{
+        font-size: 1rem;
+    }
+    .nav-icon{
+        padding-right: .5rem;
+    }
+    /* HEAD */
     section#head{
-        margin-top: 3rem;
-        padding-top: 5rem;
+        margin-top: 2rem;
+        padding-top: 4rem;
         padding-bottom: 1rem;
         height: 50vh;
-        background-image: url(../media/laptop2.jpg);
+        background-size:100% 40%;
     }
     h1{
-        font-size: 2rem;
-    }
-    .lead, #learnMore, .card-title{
         font-size: 1rem;
+    }
+    p.lead{
+        font-size: .5rem;
     }
     .card-title{
         font-weight: bold;
@@ -323,8 +341,37 @@ section#contact{
     h2{
         font-size: 1.5rem;
     }
-    .navbar, #section-me, .card-text, #card-button, #form-button{
+    #learnMore, .card-title, .navbar, p.portfolio-card-text, #form-button, .portfolio-text, a.portfolio-link{
         font-size: .75rem;
+    }
+    /* ABOUT ME & PORTFOLIO*/
+    section#aboutMe, section#portfolio{
+        height: 100%;
+        margin: 0;
+    }
+    .image-about{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card-image{
+        width: 70%;
+        height: 70%;
+    }
+    .body-about{
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .textOne{
+        font-size: 14px;
+    }
+    .textTwo{
+        font-size: 18px;
+    }
+    /* CONTACT & FOOTER*/
+    .form-control, .contact-whatsapp, .footer-copyright{
+        font-size: 10px;
     }
 }
 
@@ -342,7 +389,7 @@ section#contact{
     h2{
         font-size: 2rem;
     }
-    .navbar, #section-me, .card-text, #card-button, #form-button{
+    .navbar, #card-button, #form-button{
         font-size: .9rem;
     }
 }
