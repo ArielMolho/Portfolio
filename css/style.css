@@ -257,15 +257,54 @@ section#contact {
   margin-bottom: 0; }
 
 /* MEDIA QUERIES */
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  /* NAV */
+  .logo {
+    width: 30px;
+    height: 30px; }
+  a.navbar-name {
+    font-size: .75rem; }
+  .nav-icon {
+    padding-right: .5rem; }
+  /* HEAD */
   section#head {
     margin-top: 2rem;
     padding-top: 4rem;
     padding-bottom: 1rem;
     height: 40vh;
-    background-size: 100% 40%; } }
+    background-size: 100% 40%; }
+  h1 {
+    font-size: 1rem; }
+  .card-title {
+    font-weight: bold; }
+  h2 {
+    font-size: 1rem; }
+  p.lead, #learnMore, .card-title, .navbar, p.portfolio-card-text, #form-button, .portfolio-text, a.portfolio-link {
+    font-size: .5rem; }
+  /* ABOUT ME & PORTFOLIO*/
+  section#aboutMe, section#portfolio {
+    height: 100%;
+    margin: 0; }
+  .image-about {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .card-image {
+    width: 40%;
+    height: 40%; }
+  .body-about {
+    padding: .75rem 0;
+    margin: 0; }
+  .textOne {
+    font-size: 10px; }
+  .textTwo {
+    font-size: 12px; }
+  /* CONTACT & FOOTER*/
+  .form-control, .contact-whatsapp, .footer-copyright {
+    font-size: 8px; } }
 
-@media (max-width: 567px) {
+@media (min-width: 480px) and (max-width: 567px) {
   /* NAV */
   .logo {
     width: 50px;
@@ -282,14 +321,12 @@ section#contact {
     height: 50vh;
     background-size: 100% 60%; }
   h1 {
-    font-size: 1rem; }
-  p.lead {
-    font-size: .5rem; }
+    font-size: 2rem; }
   .card-title {
     font-weight: bold; }
   h2 {
     font-size: 1.5rem; }
-  #learnMore, .card-title, .navbar, p.portfolio-card-text, #form-button, .portfolio-text, a.portfolio-link {
+  p.lead, #learnMore, .card-title, .navbar, p.portfolio-card-text, #form-button, .portfolio-text, a.portfolio-link {
     font-size: .75rem; }
   /* ABOUT ME & PORTFOLIO*/
   section#aboutMe, section#portfolio {
@@ -314,7 +351,7 @@ section#contact {
   .form-control, .contact-whatsapp, .footer-copyright {
     font-size: 10px; } }
 
-@media (max-width: 768px) {
+@media (min-width: 567px) and (max-width: 768px) {
   /* NAV */
   .logo {
     width: 50px;
@@ -347,6 +384,11 @@ section#contact {
   section#aboutMe, section#portfolio {
     height: 100%;
     margin: 0; }
+  div.card-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .image-about {
     padding: 0;
     display: flex;
@@ -362,11 +404,16 @@ section#contact {
     font-size: 14px; }
   .textTwo {
     font-size: 18px; }
+  .card-group {
+    padding: 1rem; }
+  .card-portfolio {
+    margin: 1rem;
+    padding: 1rem; }
   /* CONTACT & FOOTER*/
   .form-control, .contact-whatsapp, .footer-copyright {
     font-size: 12px; } }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   /* NAV */
   .nav-icon, nav.navbar {
     padding-right: 2rem; }
@@ -381,9 +428,9 @@ section#contact {
     font-size: 4rem; }
   h2 {
     font-size: 3rem; }
-  #learnMore, .navbar, #form-button, a.portfolio-link, .card-title {
+  #learnMore, .navbar, #form-button, .card-title {
     font-size: 1.25rem; }
-  p.lead, .portfolio-text, p.portfolio-card-text {
+  p.lead, .portfolio-text, p.portfolio-card-text, a.portfolio-link {
     font-size: 1rem; }
   /* ABOUT ME & PORTFOLIO*/
   .card-group {
@@ -411,6 +458,56 @@ section#contact {
     font-size: 16px; }
   .textTwo {
     font-size: 20px; }
+  .card-group {
+    padding: 0rem; }
+  .card-portfolio {
+    margin: 1rem;
+    padding: 1rem; }
   /* CONTACT & FOOTER*/
   .form-control, .contact-whatsapp, .footer-copyright {
     font-size: 14px; } }
+
+/*
+@media (max-width: 1024px){
+    .textOne{
+        font-size: 18px;
+    }
+    .textTwo{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1159px){
+    section#aboutMe{
+    height: 70vh;
+    margin: 0 0 30vh 0;
+    }
+    div.group-about, div.group-text{
+        background-color: var(--lightgrey);
+    }
+    .body-about{
+        padding: 0 0 0 1rem;
+        margin-bottom: 30px;
+    }
+    section#portfolio{
+        padding: 1rem;
+        height: 80vh;
+        margin: 0 0 20vh 0;
+    }
+}
+
+@media (max-width: 1200px){
+    section#aboutMe{
+    height: 80vh;
+    margin: 0 0 30vh 0;
+    }
+    .body-about{
+        padding: 0 0 0 1rem;
+        margin-bottom: 20px;
+    }
+    section#portfolio{
+        padding: 1rem;
+        height: 80vh;
+        margin: 0 0 20vh 0;
+    }
+}*/
