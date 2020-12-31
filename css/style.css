@@ -148,7 +148,7 @@ section#portfolio {
   background-color: var(--blue);
   padding: 1rem;
   height: 70vh;
-  margin: 0 0 20vh 0; }
+  margin: 0 0 30vh 0; }
 
 .portfolio-text {
   font-family: var(--fontTwo);
@@ -467,47 +467,66 @@ section#contact {
   .form-control, .contact-whatsapp, .footer-copyright {
     font-size: 14px; } }
 
-/*
-@media (max-width: 1024px){
-    .textOne{
-        font-size: 18px;
-    }
-    .textTwo{
-        font-size: 21px;
-    }
-}
-
-@media (max-width: 1159px){
-    section#aboutMe{
+@media (min-width: 992px) and (max-width: 1024px) {
+  section#aboutMe {
     height: 70vh;
-    margin: 0 0 30vh 0;
-    }
-    div.group-about, div.group-text{
-        background-color: var(--lightgrey);
-    }
-    .body-about{
-        padding: 0 0 0 1rem;
-        margin-bottom: 30px;
-    }
-    section#portfolio{
-        padding: 1rem;
-        height: 80vh;
-        margin: 0 0 20vh 0;
-    }
-}
-
-@media (max-width: 1200px){
-    section#aboutMe{
+    margin: 0 0 30vh 0; }
+  .body-about {
+    padding: 0 0 0 1rem;
+    margin-bottom: 30px; }
+  .textOne {
+    font-size: 16px; }
+  .textTwo {
+    font-size: 20px; }
+  section#portfolio {
+    padding: 1rem;
     height: 80vh;
-    margin: 0 0 30vh 0;
-    }
-    .body-about{
-        padding: 0 0 0 1rem;
-        margin-bottom: 20px;
-    }
-    section#portfolio{
-        padding: 1rem;
-        height: 80vh;
-        margin: 0 0 20vh 0;
-    }
-}*/
+    margin: 0 0 20vh 0; }
+  .card-title {
+    font-size: 1.25rem; }
+  .portfolio-text, p.portfolio-card-text, a.portfolio-link {
+    font-size: 1rem; } }
+
+@media (min-width: 1024px) and (max-width: 1052px) {
+  section#aboutMe {
+    height: 75vh;
+    margin: 0 0 20vh 0; }
+  .body-about {
+    padding: 0 0 0 1rem;
+    margin-bottom: 40px; }
+  .textOne {
+    font-size: 17.5px; }
+  .textTwo {
+    font-size: 22px; }
+  section#portfolio {
+    padding: 1rem;
+    height: 85vh;
+    margin: 0 0 20vh 0; } }
+
+@media (min-width: 1052px) and (max-width: 1159px) {
+  section#aboutMe {
+    height: 75vh;
+    margin: 0 0 20vh 0; }
+  .body-about {
+    padding: 0 0 0 1rem;
+    margin-bottom: 40px; }
+  .textOne {
+    font-size: 18px; }
+  .textTwo {
+    font-size: 22px; }
+  section#portfolio {
+    padding: 1rem;
+    height: 85vh;
+    margin: 0 0 20vh 0; } }
+
+@media (min-width: 1159px) and (max-width: 1200px) {
+  section#aboutMe {
+    height: 80vh;
+    margin: 0 0 20vh 0; }
+  .body-about {
+    padding: 0 0 0 1rem;
+    margin-bottom: 30px; }
+  section#portfolio {
+    padding: 1rem;
+    height: 80vh;
+    margin: 0 0 20vh 0; } }
