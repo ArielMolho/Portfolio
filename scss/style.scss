@@ -242,6 +242,7 @@ section#contact{
     background-color: var(--white);
 }
 
+/*
 .form-control{
     font-size: 14px;
     color: rgb(179, 177, 177);
@@ -265,18 +266,18 @@ section#contact{
 #form-button:hover{
     background-color: var(--sand);
     color: var(--blue);
-}
+}*/
 
-.whatsapp{
+.email, .whatsapp{
     padding-bottom: 3rem;
 }
 
-.contact-whatsapp{
+.contact-email, .contact-whatsapp{
     color: var(--greyblue);
     font-weight: 600;
 }
 
-.contact-whatsapp:hover{
+.contact-email:hover, .contact-whatsapp:hover{
     color: var(--blue);
 }
 

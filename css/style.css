@@ -201,35 +201,39 @@ section#portfolio {
 section#contact {
   background-color: var(--white); }
 
-.form-control {
-  font-size: 14px;
-  color: #b3b1b1;
-  border: #b3b1b1 solid 2px; }
+/*
+.form-control{
+    font-size: 14px;
+    color: rgb(179, 177, 177);
+    border: rgb(179, 177, 177) solid 2px;
+}
 
-.form-control:hover {
-  border: var(--blue) solid 2px; }
+.form-control:hover{
+    border: var(--blue) solid 2px;
+}
 
-#form-button {
-  background-color: var(--blue);
-  color: var(--white);
-  font-weight: bold;
-  font-size: .80rem;
-  border: none;
-  padding: 10px 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+#form-button{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    font-size: .80rem;
+    border: none;
+    padding: 10px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-#form-button:hover {
-  background-color: var(--sand);
-  color: var(--blue); }
-
-.whatsapp {
+#form-button:hover{
+    background-color: var(--sand);
+    color: var(--blue);
+}*/
+.email, .whatsapp {
   padding-bottom: 3rem; }
 
-.contact-whatsapp {
+.contact-email, .contact-whatsapp {
   color: var(--greyblue);
   font-weight: 600; }
 
-.contact-whatsapp:hover {
+.contact-email:hover, .contact-whatsapp:hover {
   color: var(--blue); }
 
 /* FOOTER */
